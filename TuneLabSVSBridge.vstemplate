@@ -1,0 +1,22 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>TuneLabForEngine</Name>
+    <Description>TuneLab 프로그램의 SVS 브릿지를 제작하는 템플릿 입니다.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>15</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>EngineName</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="TuneLabSVSBridge.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Engine.cs">Engine.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Singer.cs">Singer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SynthesisTask.cs">SynthesisTask.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="VoiceSource.cs">VoiceSource.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
